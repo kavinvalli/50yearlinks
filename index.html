@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavin Desi Valli | 50 Year Repositories</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <img src="https://n.kavin.me/me.jpeg" alt="" />
+      <div class="container">
+        <div class="links"></div>
+      </div>
+    </main>
+  </body>
+
+  <script>
+    const links = [
+      {
+        label: "Web Repository (Laravel + React)",
+        url: "https://github.com/kavinvalli/50-year-anniversary-web",
+      },
+      {
+        label: "Mobile Repository (Flutter)",
+        url: "https://github.com/kavinvalli/50-year-app",
+      },
+      {
+        label: "QR Code Generation (Python)",
+        url: "https://github.com/kavinvalli/50-year-qrcode-gen",
+      },
+    ];
+
+    document.querySelector(".links").innerHTML = links
+      .map(
+        (link) =>
+          `<a href="${link.url}" class="link" target="_blank" rel="noreferrer">${link.label}</a>`,
+      )
+      .join("");
+  </script>
+</html>
